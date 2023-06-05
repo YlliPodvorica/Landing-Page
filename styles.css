@@ -1,0 +1,264 @@
+body,
+.top,
+.second,
+.third,
+.image-subtext,
+.fourth-text {
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    margin-left: -25rem;
+}
+.logo img {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    object-fit: cover;
+  }
+.header,
+.first,
+.images-second,
+.fourth,
+.links{
+    display: flex;
+}
+.second-header {
+    text-align: center;
+}
+.image-subtext p{
+    width:180px;
+    text-align: center;   
+}
+
+.images-second
+{
+    margin-left: auto;
+    margin-right: auto;
+    gap:20px;
+}
+.image-subtext img{
+    height:200px;
+    border-radius: 10px;
+    border:solid rgb(255, 153, 0) 2px;
+    width:200px;
+}  
+ 
+.links{
+    gap:15px;
+    margin-top:20px;
+    margin-right: auto;
+}
+body{
+    margin:0px;
+}
+.top,
+.footer{
+background-color: #1F2937;
+}
+
+
+.placeholder{
+    text-align: center;
+    color:#F9FAF8;
+    width:500px;
+    height:200px;
+    background-color: gray;
+    border-radius: 10px;
+    border: solid rgb(255, 153, 0) 5px;
+}
+.placeholder:hover {
+    border-color: rgb(255, 206, 45);
+}
+
+.placeholder img{
+    width: 500px;
+    height: 200px;
+   
+}
+.links a{
+text-decoration: none;
+font-size: 18px;
+color:#E5E7EB;
+}
+
+.first-container{
+    padding-bottom: 100px;
+    width:470px;
+}
+.header{
+    gap:450px;
+    justify-content: flex-start;
+}
+.first{
+    gap:100px;
+    align-items: center;
+}
+
+.top{
+    align-items: center;
+}
+
+.first-header
+{
+    font-size:48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.subtext{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.first-btn{
+    background-color:#3882F6;
+    border-color:#3882F6;
+    border-radius: 10px;
+    color:#F9FAF8;
+    padding:0;
+    width:100px;
+    height:30px;
+}
+.second {
+    color: #E5E7EB;
+    background-color: #1F2937;
+}
+
+.second-header{
+    font-size:36px;
+    font-weight: 900;
+   
+}
+
+.third{
+    background-image: url(./images/nature.jpeg);
+    background-size: cover;
+    background-position: center;
+  
+}
+.quote{
+    margin-top:200px;
+    margin-bottom:auto;
+    font-size: 36px;
+    font-style:italic;
+    font-weight:400;
+    color:#ebf4ff
+}
+
+.quoter{
+    color: #ccc;
+    flex-basis: 200px;
+    font-weight: bold;
+
+}
+
+.third{
+    text-align: center;
+}
+
+.quoter{
+    padding-left:150px;
+}
+.fourth-header{
+    font-weight: 900;
+    font-size: 24px;
+    margin-top: 20px;
+    margin:40px 0 0 0;
+}
+
+.fourth-text {
+    align-items: center;
+    gap: 20px;
+}
+.fourth-subtext{
+    margin:0 0 40px 0;
+}
+
+.fourth{
+    margin:0;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    height:140px;
+    width:100%;
+    background-color: #1F2937;
+    color: white;
+   
+}
+
+.fourth-button{
+   display: flex;
+   margin-left: 5rem;
+    padding: 10px 25px;
+    align-self: center;
+    color:#F9FAF8;
+    background-color: #3882F6;
+    border-radius: 10px;
+    border-color: #ffeeee;
+}
+.fourth-button:hover {
+    background-color: #4078c0;
+
+  }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
+}
+.footer p{
+
+    color: #F9FAF8;
+    font-size:10px;
+}
+#enlarged-image-1,
+#enlarged-image-2,
+#enlarged-image-3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+  z-index: 9999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#enlarged-image-1:target,
+#enlarged-image-2:target,
+#enlarged-image-3:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+#enlarged-image-1 img,
+#enlarged-image-2 img,
+#enlarged-image-3 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.close-btn:hover {
+  color: #ccc;
+}
+.image-subtext img:hover {
+  border-color: rgb(255, 206, 45);
+}
